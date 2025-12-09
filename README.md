@@ -1,13 +1,12 @@
-# ParaTransCNN
-This repo holds code for [ParaTransCNN: Parallelized TransCNN Encoder for Medical Image Segmentation](https://arxiv.org/abs/2401.15307)
+# HIFNet：A hybrid CNN-Transformer network integrating multiscale spatially detailed features for medical image segmentation
 * Overview
 ![image](/assets/ParaTransCNN.png)
 
 ## Requirements
-We trained on NVIDIA RTX 3090, where python 3.9.10 and torch 1.12.1 on ubuntu 22.04.
+We trained on NVIDIA RTX A100, where python 3.9.19 and torch 1.12.1.
 
 We use the libraries of these versions:
-* Python 3.9.10
+* Python 3.9.19
 * Torch 1.12.1+cu113
 * torchvision 0.13.1+cu113
 * numpy 1.21.5
@@ -22,22 +21,22 @@ pip install -r requirements.txt
 * AVT Dataset: please go to "./datasets/README.md" for the details about preparing preprocessed AVT dataset. The preprocessed dataset will be exposed later.
 
 ## Train
-* Run the following code to train ParaTransCNN on the Synapse Dataset:
+* Run the following code to train HIFNet on the Synapse Dataset:
 ```bash
-python train.py --dataset Synapse --train_path <your path to Synapse train dataset> --model_name ParaTransCNN --max_epochs 150 --batch_size 4 --base_lr 0.01 
+python train.py --dataset Synapse --train_path <your path to Synapse train dataset> --model_name HIFNet --max_epochs 250 --batch_size 32 --base_lr 0.01 
 ```
 * Run the following code to train ParaTransCNN on the AVT Dataset:
 ```bash
-python train.py --dataset AVT --train_path <your path to AVT train dataset> --model_name ParaTransCNN --max_epochs 150 --batch_size 4 --base_lr 0.01 
+python train.py --dataset AVT --train_path <your path to AVT train dataset> --model_name HIFNet --max_epochs 170 --batch_size 20 --base_lr 0.01 
 ```
 ## Test
-* Run the following code to test the trained ParaTransCNN on the Synapse Dataset:
+* Run the following code to test the trained HIFNet on the Synapse Dataset:
 ```bash
-python test.py --dataset Synapse --volume_path <your path to Synapse test dataset> --model_name ParaTransCNN --max_epochs 150 --batch_size 4 --base_lr 0.01 
+python test.py --dataset Synapse --volume_path <your path to Synapse test dataset> --model_name HIFNet --max_epochs 250 --batch_size 32 --base_lr 0.01 
 ```
-* Run the following code to test the trained ParaTransCNN on the AVT Dataset:
+* Run the following code to test the trained HIFNet on the AVT Dataset:
 ```bash
-python test.py --dataset AVT --volume_path <your path to AVT test dataset> --model_name ParaTransCNN --max_epochs 150 --batch_size 4 --base_lr 0.01 
+python test.py --dataset AVT --volume_path <your path to AVT test dataset> --model_name ParaTransCNN --max_epochs 170 --batch_size 20 --base_lr 0.01 
 ```
 ## Results
 * Synapse
