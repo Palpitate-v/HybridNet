@@ -1,0 +1,168 @@
+[09:07:58.949] Namespace(draw='false', checkpoint_path='/tmp/pycharm_project_480/ParaTransCNN-master/checkpoints/Ours_Synapse/epoch_246.pth', seed=56, volume_path='./data/Synapse/test_vol', dataset='Synapse', num_classes=9, list_dir='./lists/lists_Synapse', img_size=224, is_savenii=False, test_save_dir='predict/', deterministic=1, base_lr=0.01, batch_size=4, max_epochs=50, model_name='demo4.0-bs4', Dataset=<class 'datasets.dataset_synapse.Synapse_dataset'>)
+[09:07:58.956] /tmp/pycharm_project_480/ParaTransCNN-master/checkpoints/Ours_Synapse/epoch_246
+[09:07:58.956] 12 test_vol iterations per epoch
+[09:10:48.974] Namespace(draw='false', checkpoint_path='/tmp/pycharm_project_480/ParaTransCNN-master/checkpoints/Ours_Synapse/epoch_246.pth', seed=56, volume_path='./data/Synapse/test_vol', dataset='Synapse', num_classes=9, list_dir='./lists/lists_Synapse', img_size=224, is_savenii=False, test_save_dir='predict/', deterministic=1, base_lr=0.01, batch_size=4, max_epochs=50, model_name='demo4.0-bs4', Dataset=<class 'datasets.dataset_synapse.Synapse_dataset'>)
+[09:10:48.975] /tmp/pycharm_project_480/ParaTransCNN-master/checkpoints/Ours_Synapse/epoch_246
+[09:10:48.975] 12 test_vol iterations per epoch
+[09:13:19.773] Namespace(draw='false', checkpoint_path='/tmp/pycharm_project_480/ParaTransCNN-master/checkpoints/Ours_Synapse/epoch_246.pth', seed=56, volume_path='./data/Synapse/test_vol', dataset='Synapse', num_classes=9, list_dir='./lists/lists_Synapse', img_size=224, is_savenii=False, test_save_dir='predict/', deterministic=1, base_lr=0.01, batch_size=4, max_epochs=50, model_name='demo4.0-bs4', Dataset=<class 'datasets.dataset_synapse.Synapse_dataset'>)
+[09:13:19.773] /tmp/pycharm_project_480/ParaTransCNN-master/checkpoints/Ours_Synapse/epoch_246
+[09:13:19.773] 12 test_vol iterations per epoch
+[09:14:38.580] idx 0 case case0008 mean_dice: 0.696384, mean_hd95: 12.956123, mean_asd: 0.000000, mean_assd: 0.000000
+[09:15:23.369] idx 1 case case0022 mean_dice: 0.917948, mean_hd95: 2.067715, mean_asd: 0.000000, mean_assd: 0.000000
+[09:16:12.804] idx 2 case case0038 mean_dice: 0.862519, mean_hd95: 8.354650, mean_asd: 0.000000, mean_assd: 0.000000
+[09:17:53.838] idx 3 case case0036 mean_dice: 0.836730, mean_hd95: 12.300813, mean_asd: 0.000000, mean_assd: 0.000000
+[09:19:07.454] idx 4 case case0032 mean_dice: 0.913543, mean_hd95: 4.964667, mean_asd: 0.000000, mean_assd: 0.000000
+[09:20:17.420] idx 5 case case0002 mean_dice: 0.879032, mean_hd95: 20.209363, mean_asd: 0.000000, mean_assd: 0.000000
+[09:21:05.661] idx 6 case case0029 mean_dice: 0.858983, mean_hd95: 16.971475, mean_asd: 0.000000, mean_assd: 0.000000
+[09:22:50.433] idx 7 case case0003 mean_dice: 0.796783, mean_hd95: 35.009748, mean_asd: 0.000000, mean_assd: 0.000000
+[09:24:06.589] idx 8 case case0001 mean_dice: 0.821997, mean_hd95: 13.720973, mean_asd: 0.000000, mean_assd: 0.000000
+[09:25:15.891] idx 9 case case0004 mean_dice: 0.821716, mean_hd95: 8.873829, mean_asd: 0.000000, mean_assd: 0.000000
+[09:25:57.958] idx 10 case case0025 mean_dice: 0.850658, mean_hd95: 17.122152, mean_asd: 0.000000, mean_assd: 0.000000
+[09:26:37.980] idx 11 case case0035 mean_dice: 0.900214, mean_hd95: 2.943378, mean_asd: 0.000000, mean_assd: 0.000000
+[09:26:38.010] Mean class 1 mean_dice: 0.892508, mean_hd95: 10.893019, mean_asd: 0.000000, mean_assd: 0.000000
+[09:26:38.010] Mean class 2 mean_dice: 0.731565, mean_hd95: 10.671673, mean_asd: 0.000000, mean_assd: 0.000000
+[09:26:38.010] Mean class 3 mean_dice: 0.882180, mean_hd95: 24.419836, mean_asd: 0.000000, mean_assd: 0.000000
+[09:26:38.010] Mean class 4 mean_dice: 0.851097, mean_hd95: 10.463993, mean_asd: 0.000000, mean_assd: 0.000000
+[09:26:38.010] Mean class 5 mean_dice: 0.952556, mean_hd95: 6.718125, mean_asd: 0.000000, mean_assd: 0.000000
+[09:26:38.010] Mean class 6 mean_dice: 0.716045, mean_hd95: 8.005623, mean_asd: 0.000000, mean_assd: 0.000000
+[09:26:38.010] Mean class 7 mean_dice: 0.917768, mean_hd95: 16.195627, mean_asd: 0.000000, mean_assd: 0.000000
+[09:26:38.010] Mean class 8 mean_dice: 0.827285, mean_hd95: 16.295362, mean_asd: 0.000000, mean_assd: 0.000000
+[09:26:38.010] Testing performance in best val model: mean_dice: 0.846376, mean_hd95: 12.957907, mean_asd: 0.000000, mean_assd: 0.000000
+[09:26:38.010] --- Confusion Matrix ---
+[09:26:38.011] 
+[[393269159     54035     31891     57512     64570    492768     84321
+      54386    311790]
+ [    42785    399151         0         0         0         0         0
+          0         0]
+ [    19825         0     89055         0         0      8774         0
+          0       791]
+ [    49395         0         0    831335       506         0        37
+       6037         0]
+ [    67737         0         0      7516    802544      1383         0
+          0         0]
+ [   308799         0      1867         0      2433   9417210       365
+       3729     27638]
+ [   151038         2         0       168         0      9367    327343
+       4300     12321]
+ [    75130         0         0      2060         0      4820         0
+    1299396      5333]
+ [   354686        13        24      1140         0     78210      7356
+      97400   2102341]]
+[09:26:38.250] Confusion Matrix (Organ Classes Only) saved to predict//confusion_matrix_organs.png
+[09:26:38.251] --- Per-Class IoU (Jaccard) ---
+[09:26:38.251] Class 1 (Aorta) IoU: 0.804763
+[09:26:38.251] Class 2 (Gallbladder) IoU: 0.585014
+[09:26:38.251] Class 3 (Kidney (L)) IoU: 0.869865
+[09:26:38.251] Class 4 (Kidney (R)) IoU: 0.847738
+[09:26:38.251] Class 5 (Liver) IoU: 0.909229
+[09:26:38.251] Class 6 (Pancreas) IoU: 0.548664
+[09:26:38.251] Class 7 (Spleen) IoU: 0.836921
+[09:26:38.251] Class 8 (Stomach) IoU: 0.701004
+[09:26:38.251] Mean IoU (classes 1-8): 0.762900
+[09:26:38.251] --- Inference Performance Metrics ---
+[09:26:38.251] Total test time: 797.7999 seconds
+[09:26:38.251] Total slices processed: 1568
+[09:26:38.251] Average time per volume: 66.4833 seconds
+[09:26:38.251] Inference speed: 1.9654 slices/sec
+[09:26:38.252] Inference speed: 0.9025 volumes/min
+[09:26:38.252] Peak inference GPU memory: 135.88 MB
+[09:26:38.252] -------------------------------------[09:29:09.372] Namespace(checkpoint_path='/tmp/pycharm_project_480/ParaTransCNN-master/checkpoints/aaa-Ours_Synapse/epoch_246.pth', seed=9999, is_savenii='', img_size=224, volume_path='./data/Synapse/test_vol', dataset='Synapse', num_classes=9, list_dir='./lists/lists_Synapse', test_save_dir='', deterministic=1, base_lr=0.01, batch_size=4, max_epochs=50, model_name='demo4.0-bs4', Dataset=<class 'datasets.dataset_synapse.Synapse_dataset'>)
+[09:29:09.372] /tmp/pycharm_project_480/ParaTransCNN-master/checkpoints/aaa-Ours_Synapse/epoch_246
+[09:29:09.373] 12 test_vol iterations per epoch
+[09:30:57.549] Namespace(checkpoint_path='/tmp/pycharm_project_480/ParaTransCNN-master/checkpoints/aaa-Ours_Synapse/epoch_246.pth', seed=9999, is_savenii='', img_size=224, volume_path='./data/Synapse/test_vol', dataset='Synapse', num_classes=9, list_dir='./lists/lists_Synapse', test_save_dir='', deterministic=1, base_lr=0.01, batch_size=4, max_epochs=50, model_name='demo4.0-bs4', Dataset=<class 'datasets.dataset_synapse.Synapse_dataset'>)
+[09:30:57.549] /tmp/pycharm_project_480/ParaTransCNN-master/checkpoints/aaa-Ours_Synapse/epoch_246
+[09:30:57.550] 12 test_vol iterations per epoch
+[09:32:41.587] Namespace(checkpoint_path='/tmp/pycharm_project_480/ParaTransCNN-master/checkpoints/aaa-Ours_Synapse/epoch_246.pth', seed=9999, is_savenii='', img_size=224, volume_path='./data/Synapse/test_vol', dataset='Synapse', num_classes=9, list_dir='./lists/lists_Synapse', test_save_dir='', deterministic=1, base_lr=0.01, batch_size=4, max_epochs=50, model_name='demo4.0-bs4', Dataset=<class 'datasets.dataset_synapse.Synapse_dataset'>)
+[09:32:41.588] /tmp/pycharm_project_480/ParaTransCNN-master/checkpoints/aaa-Ours_Synapse/epoch_246
+[09:32:41.588] 12 test_vol iterations per epoch
+[09:34:07.289] idx 0 case case0008 mean_dice : 0.696384 mean_hd95 : 12.956123
+[09:34:54.528] idx 1 case case0022 mean_dice : 0.917948 mean_hd95 : 2.067715
+[09:35:47.119] idx 2 case case0038 mean_dice : 0.862519 mean_hd95 : 8.354650
+[09:37:30.638] idx 3 case case0036 mean_dice : 0.836730 mean_hd95 : 12.300813
+[09:38:41.153] idx 4 case case0032 mean_dice : 0.913543 mean_hd95 : 4.964667
+[09:39:49.393] idx 5 case case0002 mean_dice : 0.879032 mean_hd95 : 20.209363
+[09:40:36.833] idx 6 case case0029 mean_dice : 0.858983 mean_hd95 : 16.971475
+[09:42:13.997] idx 7 case case0003 mean_dice : 0.796783 mean_hd95 : 35.009748
+[09:43:27.657] idx 8 case case0001 mean_dice : 0.821997 mean_hd95 : 13.720973
+[09:44:34.425] idx 9 case case0004 mean_dice : 0.821716 mean_hd95 : 8.873829
+[09:45:14.864] idx 10 case case0025 mean_dice : 0.850658 mean_hd95 : 17.122152
+[09:45:53.799] idx 11 case case0035 mean_dice : 0.900214 mean_hd95 : 2.943378
+[09:45:53.838] ==================================================
+[09:45:53.838] Inference Time Statistics:
+[09:45:53.838] Total inference time: 791.71 seconds
+[09:45:53.838] Processed 1568 slices in 12 volumes
+[09:45:53.838] Speed: 1.98 slices/second
+[09:45:53.838] Speed: 0.91 volumes/minute
+[09:45:53.838] ==================================================
+[09:45:53.838] Mean class 1 mean_dice : 0.892508 mean_hd95 : 10.893019
+[09:45:53.838] Mean class 2 mean_dice : 0.731565 mean_hd95 : 10.671673
+[09:45:53.839] Mean class 3 mean_dice : 0.882180 mean_hd95 : 24.419836
+[09:45:53.839] Mean class 4 mean_dice : 0.851097 mean_hd95 : 10.463993
+[09:45:53.839] Mean class 5 mean_dice : 0.952556 mean_hd95 : 6.718125
+[09:45:53.839] Mean class 6 mean_dice : 0.716045 mean_hd95 : 8.005623
+[09:45:53.839] Mean class 7 mean_dice : 0.917768 mean_hd95 : 16.195627
+[09:45:53.839] Mean class 8 mean_dice : 0.827285 mean_hd95 : 16.295362
+[09:45:53.839] Testing performance in best val model: mean_dice : 0.846376 mean_hd95 : 12.957907
+[13:33:15.499] Namespace(draw='false', checkpoint_path='/tmp/pycharm_project_480/ParaTransCNN-master/checkpoints/aaa-Ours_Synapse/epoch_246.pth', seed=56, volume_path='./data/Synapse/test_vol', dataset='Synapse', num_classes=9, list_dir='./lists/lists_Synapse', img_size=224, is_savenii=False, test_save_dir='predict/', deterministic=1, base_lr=0.01, batch_size=4, max_epochs=50, model_name='demo4.0-bs4', Dataset=<class 'datasets.dataset_synapse.Synapse_dataset'>)
+[13:33:15.499] /tmp/pycharm_project_480/ParaTransCNN-master/checkpoints/aaa-Ours_Synapse/epoch_246
+[13:33:15.500] 12 test_vol iterations per epoch
+[13:36:21.947] idx 0 case case0008 mean_dice: 0.696384, mean_hd95: 12.956123, mean_asd: 4.582534, mean_assd: 3.184647
+[13:38:07.686] idx 1 case case0022 mean_dice: 0.917948, mean_hd95: 2.067715, mean_asd: 0.728101, mean_assd: 0.585006
+[13:40:04.227] idx 2 case case0038 mean_dice: 0.862519, mean_hd95: 8.354650, mean_asd: 3.031336, mean_assd: 1.821051
+[13:44:07.902] idx 3 case case0036 mean_dice: 0.836730, mean_hd95: 12.300813, mean_asd: 4.618622, mean_assd: 2.834660
+[13:47:07.249] idx 4 case case0032 mean_dice: 0.913543, mean_hd95: 4.964667, mean_asd: 1.513079, mean_assd: 1.082166
+[13:50:03.330] idx 5 case case0002 mean_dice: 0.879032, mean_hd95: 20.209363, mean_asd: 5.901205, mean_assd: 3.287072
+[13:52:02.243] idx 6 case case0029 mean_dice: 0.858983, mean_hd95: 16.971475, mean_asd: 3.237127, mean_assd: 2.094939
+[13:56:14.885] idx 7 case case0003 mean_dice: 0.796783, mean_hd95: 35.009748, mean_asd: 11.826474, mean_assd: 6.455944
+[13:59:18.753] idx 8 case case0001 mean_dice: 0.821997, mean_hd95: 13.720973, mean_asd: 3.454935, mean_assd: 2.409450
+[14:02:06.109] idx 9 case case0004 mean_dice: 0.821716, mean_hd95: 8.873829, mean_asd: 1.932727, mean_assd: 1.747296
+[14:03:47.148] idx 10 case case0025 mean_dice: 0.850658, mean_hd95: 17.122152, mean_asd: 4.512606, mean_assd: 2.635199
+[14:05:22.764] idx 11 case case0035 mean_dice: 0.900214, mean_hd95: 2.943378, mean_asd: 0.868063, mean_assd: 0.690019
+[14:05:22.806] Mean class 1 mean_dice: 0.892508, mean_hd95: 10.893019, mean_asd: 2.262157, mean_assd: 1.451493
+[14:05:22.806] Mean class 2 mean_dice: 0.731565, mean_hd95: 10.671673, mean_asd: 3.181793, mean_assd: 2.256011
+[14:05:22.806] Mean class 3 mean_dice: 0.882180, mean_hd95: 24.419836, mean_asd: 7.604547, mean_assd: 4.106639
+[14:05:22.806] Mean class 4 mean_dice: 0.851097, mean_hd95: 10.463993, mean_asd: 3.502131, mean_assd: 2.298859
+[14:05:22.806] Mean class 5 mean_dice: 0.952556, mean_hd95: 6.718125, mean_asd: 1.970045, mean_assd: 1.304355
+[14:05:22.806] Mean class 6 mean_dice: 0.716045, mean_hd95: 8.005623, mean_asd: 1.903857, mean_assd: 1.800803
+[14:05:22.806] Mean class 7 mean_dice: 0.917768, mean_hd95: 16.195627, mean_asd: 5.546021, mean_assd: 3.024577
+[14:05:22.806] Mean class 8 mean_dice: 0.827285, mean_hd95: 16.295362, mean_asd: 4.833989, mean_assd: 2.975564
+[14:05:22.806] Testing performance in best val model: mean_dice: 0.846376, mean_hd95: 12.957907, mean_asd: 3.850567, mean_assd: 2.402288
+[14:05:22.806] --- Confusion Matrix ---
+[14:05:22.807] 
+[[393269159     54035     31891     57512     64570    492768     84321
+      54386    311790]
+ [    42785    399151         0         0         0         0         0
+          0         0]
+ [    19825         0     89055         0         0      8774         0
+          0       791]
+ [    49395         0         0    831335       506         0        37
+       6037         0]
+ [    67737         0         0      7516    802544      1383         0
+          0         0]
+ [   308799         0      1867         0      2433   9417210       365
+       3729     27638]
+ [   151038         2         0       168         0      9367    327343
+       4300     12321]
+ [    75130         0         0      2060         0      4820         0
+    1299396      5333]
+ [   354686        13        24      1140         0     78210      7356
+      97400   2102341]]
+[14:05:23.067] Confusion Matrix (Organ Classes Only) saved to predict//confusion_matrix_organs.png
+[14:05:23.067] --- Per-Class IoU (Jaccard) ---
+[14:05:23.067] Class 1 (Aorta) IoU: 0.804763
+[14:05:23.067] Class 2 (Gallbladder) IoU: 0.585014
+[14:05:23.067] Class 3 (Kidney (L)) IoU: 0.869865
+[14:05:23.067] Class 4 (Kidney (R)) IoU: 0.847738
+[14:05:23.067] Class 5 (Liver) IoU: 0.909229
+[14:05:23.067] Class 6 (Pancreas) IoU: 0.548664
+[14:05:23.067] Class 7 (Spleen) IoU: 0.836921
+[14:05:23.067] Class 8 (Stomach) IoU: 0.701004
+[14:05:23.067] Mean IoU (classes 1-8): 0.762900
+[14:05:23.068] --- Inference Performance Metrics ---
+[14:05:23.068] Total test time: 1926.7896 seconds
+[14:05:23.068] Total slices processed: 1568
+[14:05:23.068] Average time per volume: 160.5658 seconds
+[14:05:23.068] Inference speed: 0.8138 slices/sec
+[14:05:23.068] Inference speed: 0.3737 volumes/min
+[14:05:23.068] Peak inference GPU memory: 135.88 MB
+[14:05:23.068] -------------------------------------
