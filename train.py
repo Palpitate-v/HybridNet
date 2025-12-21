@@ -23,7 +23,7 @@ parser.add_argument('--dataset', type=str,
                     default=datafile_name, help='experiment_name')  # Synapse   CRC_dcm_npz
 
 parser.add_argument('--list_dir', type=str,
-                    default='./lists/lists_Synapse', help='list dir')  # lists_Synapse   lists_CRC
+                    default='./lists/lists_'+datafile_name, help='list dir')
 
 parser.add_argument('--deterministic', type=int, default=1,
                     help='whether use deterministic training')
@@ -34,7 +34,7 @@ parser.add_argument('--seed', type=int,
 parser.add_argument('--n_gpu', type=int, default=1, help='total gpu')
 
 parser.add_argument('--num_classes', type=int,
-                    default=9, help='output channel of network')  # 9
+                    default=9, help='output channel of network')  
 
 pre='true'
 
@@ -53,9 +53,7 @@ parser.add_argument('--batch_size', type=int, default=32
                     )
 
 parser.add_argument('--model_name', type=str,
-                    default="ablation2.0-3-bs32-dropVit-dropLst0.5-swin_SA_MSCF-dim64-T250-ce5_dice5")
-#
-# demo7.67-3-bs32-dropVit-dropLst0.5-swin_SDI-res101-e512-dim64-T250-ce5_dice5
+                    default="")
 
 args = parser.parse_args()
 
@@ -64,8 +62,8 @@ if __name__ == "__main__":
         cudnn.benchmark = True
         cudnn.deterministic = False
     else:
-        cudnn.benchmark = False  # 不会自动寻找最优算法，而是使用默认的算法。
-        cudnn.deterministic = True  # 强制使用确定性的算法，以确保每次运行的结果是完全一致的。
+        cudnn.benchmark = False  
+        cudnn.deterministic = True  
 
     random.seed(args.seed)
     np.random.seed(args.seed)
@@ -74,13 +72,16 @@ if __name__ == "__main__":
     dataset_name = args.dataset
 
     dataset_config = {
-        datafile_name: {
-            "checkpoint_path": './checkpoints/{}_{}_{}_{}_{}'.format(args.model_name, args.op_sc, args.base_lr,
-                                                                     args.max_epochs,
-                                                                     args.dataset),
-            'list_dir': args.list_dir,
-            'num_classes': args.num_classes,
-        }
+        'Synapse': {
+            "checkpoint_path" : './checkpoints/seed{}_{}_{}'.format(args.model_name, args.seed, args.dataset),
+            'list_dir': './lists/lists_Synapse',
+            'num_classes': 9,
+        },
+        'AVT': {
+            "checkpoint_path" : './checkpoints/seed{}_{}_{}'.format(args.model_name, args.seed,args.dataset),
+            'list_dir': './lists/lists_AVT',
+            'num_classes': 2,
+        },
     }
 
     args.checkpoint_path = dataset_config[dataset_name]['checkpoint_path']
