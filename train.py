@@ -48,7 +48,8 @@ parser.add_argument('--base_lr', type=float, default=0.01
                     )
 parser.add_argument('--max_epochs', type=int, default=250
                     )
-
+parser.add_argument('--dim', type=int, default=64
+                    )
 parser.add_argument('--batch_size', type=int, default=32
                     )
 
@@ -76,22 +77,25 @@ if __name__ == "__main__":
             "checkpoint_path" : './checkpoints/seed{}_{}_{}'.format(args.model_name, args.seed, args.dataset),
             'list_dir': './lists/lists_Synapse',
             'num_classes': 9,
+            'dim':64,
         },
         'AVT': {
             "checkpoint_path" : './checkpoints/seed{}_{}_{}'.format(args.model_name, args.seed,args.dataset),
             'list_dir': './lists/lists_AVT',
             'num_classes': 2,
+            'dim':128,
         },
     }
 
     args.checkpoint_path = dataset_config[dataset_name]['checkpoint_path']
     args.list_dir = dataset_config[dataset_name]['list_dir']
     args.num_classes = dataset_config[dataset_name]['num_classes']
+    args.dim = dataset_config[dataset_name]['dim']
 
     if not os.path.exists(args.checkpoint_path):
         os.makedirs(args.checkpoint_path)
 
-    net = HIFNet(num_classes=args.num_classes).cuda()  # 获取网络模型
+    net = HIFNet(num_classes=args.num_classes,dim=args.dim).cuda() 
     if pre == 'true':
         pretrained_weights_path = 'swin_tiny_patch4_window7_224.pth'
         pretrained_weights = torch.load(pretrained_weights_path)
