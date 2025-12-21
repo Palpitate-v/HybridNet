@@ -14,13 +14,13 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('--train_path', type=str,
                     default='data/' + datafile_name + '/train/',
-                    help='train root dir for data')  # Synapse   CRC_dcm_npz
+                    help='train root dir for data')  
 
 parser.add_argument('--checkpoint_path', type=str,
                     default='weight', help='weight root dir for data')
 
 parser.add_argument('--dataset', type=str,
-                    default=datafile_name, help='experiment_name')  # Synapse   CRC_dcm_npz
+                    default=datafile_name, help='experiment_name') 
 
 parser.add_argument('--list_dir', type=str,
                     default='./lists/lists_'+datafile_name, help='list dir')
