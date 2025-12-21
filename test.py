@@ -20,32 +20,29 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 parser = argparse.ArgumentParser()
 
 draw = 'false'
-
-parser.add_argument('--checkpoint_path', type=str,default=
-'./checkpoints/dense1.0-3-bs32-SkipEncoder-dim64-T250-ce5_dice5_AdamW_cos_0.01_250_Synapse/epoch_249.pth'
-,)
+datafile_name = 'Synapse'
 
 parser.add_argument('--volume_path', type=str,
-                    default='./data/Synapse/test_vol',
-                    help='root dir for validation volume data')  # for acdc volume_path=root_dir
+                    default='./data/'+datafile_name+'/test_vol',
+                    help='root dir for validation volume data')  
 parser.add_argument('--dataset', type=str,
-                    default='Synapse', help='experiment_name')
+                    default=datafile_name, help='experiment_name')
 parser.add_argument('--num_classes', type=int,
                     default=9, help='output channel of network')
 parser.add_argument('--list_dir', type=str,
-                    default='./lists/lists_Synapse', help='list dir')
+                    default='./lists/lists_'+datafile_name, help='list dir')
 parser.add_argument('--img_size', type=int, default=224, help='input patch size of network input')
 parser.add_argument('--is_savenii', action="store_true", help='whether to save results during inference')
 parser.add_argument('--test_save_dir', type=str, default='predict/', help='saving prediction as nii!')
 parser.add_argument('--deterministic', type=int, default=1, help='whether use deterministic training')
 parser.add_argument('--base_lr', type=float, default=0.01, help='segmentation network learning rate')
 parser.add_argument('--batch_size', type=int,
-                    default=4, help='batch_size per gpu')
+                    default=32, help='batch_size per gpu')
 parser.add_argument('--max_epochs', type=int,
-                    default=50, help='maximum epoch number to train')
+                    default=250, help='maximum epoch number to train')
 parser.add_argument('--seed', type=int, default=1234, help='random seed')
 parser.add_argument('--model_name', type=str,
-                    default="demo4.0-bs4", help='the name of network')
+                    default="", help='the name of network')
 args = parser.parse_args()
 
 
@@ -190,8 +187,7 @@ if __name__ == "__main__":
         },
         'AVT': {
             'Dataset': AVT_dataset,
-            "checkpoint_path": './checkpoints/{}_SGD_{}_{}_{}/epoch_146.pth'.format(args.model_name, args.base_lr,
-                                                                                    args.max_epochs, args.dataset),
+            "checkpoint_path":args.checkpoint_path,
             'list_dir': './lists/lists_AVT',
             'num_classes': 2,
         },
