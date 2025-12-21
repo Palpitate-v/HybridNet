@@ -34,20 +34,20 @@ pip install -r requirements.txt
 
 * Run the following code to train HybridNet on the Synapse Dataset:
 ```bash
-python train.py --dataset Synapse --train_path <your path to Synapse train dataset> --model_name HybridNet --max_epochs 250 --batch_size 32 --base_lr 0.01 
+python train.py --datafile_name Synapse --train_path <your path to Synapse train dataset> --model_name HybridNet --max_epochs 250 --T_max 250 --batch_size 32 --base_lr 0.01 
 ```
 * Run the following code to train HybridNet on the AVT Dataset:
 ```bash
-python train.py --dataset AVT --train_path <your path to z_AVT train dataset> --model_name HybridNet --max_epochs 170 --batch_size 20 --base_lr 0.01 
+python train.py --datafile_name AVT --train_path <your path to AVT train dataset> --model_name HybridNet --max_epochs 170 --T_max 170 --batch_size 20 --base_lr 0.01 
 ```
 ## Test
 * Run the following code to test the trained HybridNet on the Synapse Dataset:
 ```bash
-python test.py --dataset Synapse --volume_path <your path to Synapse test dataset> --model_name HybridNet --max_epochs 250 --batch_size 32 --base_lr 0.01 
+python test.py --datafile_name Synapse --volume_path <your path to Synapse test dataset> --model_name HybridNet --max_epochs 250 --batch_size 32 --base_lr 0.01   
 ```
 * Run the following code to test the trained HybridNet on the AVT Dataset:
 ```bash
-python test.py --dataset AVT --volume_path <your path to z_AVT test dataset> --model_name HybridNet --max_epochs 170 --batch_size 20 --base_lr 0.01 
+python test.py --datafile_name AVT --volume_path <your path to AVT test dataset> --model_name HybridNet --max_epochs 170 --batch_size 20 --base_lr 0.01 
 ```
 ## 📊 Results
 
