@@ -55,7 +55,7 @@ python test.py --datafile_name AVT --volume_path <your path to AVT test dataset>
 We provide pretrained model checkpoints for reproducibility and convenient evaluation.  
 All checkpoints are hosted on **Baidu Netdisk**:
 
-- **URL**: <https://pan.baidu.com/s/1yho_6gdZkiaquWn-mPOeEw?pwd=u2zf ; Extraction Code: u2zf>
+- **URL**: <https://pan.baidu.com/s/1yho_6gdZkiaquWn-mPOeEw?pwd=u2zf>
 
 The shared folder contains two subdirectories:
 - **Synapse/**: best-performing checkpoint trained on the Synapse dataset
