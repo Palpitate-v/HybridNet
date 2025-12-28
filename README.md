@@ -49,6 +49,21 @@ python test.py --datafile_name Synapse --volume_path <your path to Synapse test 
 ```bash
 python test.py --datafile_name AVT --volume_path <your path to AVT test dataset> --model_name HybridNet --max_epochs 170 --batch_size 20 --base_lr 0.01 
 ```
+
+## 💾 Pretrained Checkpoints
+
+We provide pretrained model checkpoints for reproducibility and convenient evaluation.  
+All checkpoints are hosted on **Baidu Netdisk**:
+
+- **URL**: <https://pan.baidu.com/s/1yho_6gdZkiaquWn-mPOeEw?pwd=u2zf ; Extraction Code: u2zf>
+
+The shared folder contains two subdirectories:
+- **Synapse/**: best-performing checkpoint trained on the Synapse dataset
+- **AVT/**: best-performing checkpoint trained on the AVT dataset
+
+Each subdirectory stores the corresponding **optimal model weights** used for the reported results.
+
+
 ## 📊 Results
 
 ### 1. Synapse Multi-Organ (Mean ± SD)
