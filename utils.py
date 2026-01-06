@@ -56,25 +56,6 @@ def calculate_metric_percase(pred, gt):
     else:
         return 0, 0
 
-def test_single_volume_CRC(image, label, net, classes, patch_size=[224, 224], test_save_path=None, case=None,
-                               z_spacing=1):
-    image, label = image.squeeze(0).cpu().detach().numpy(), label.squeeze(0).cpu().detach().numpy()
-
-    input = torch.from_numpy(image).unsqueeze(0).unsqueeze(0).float().cuda()
-    net.eval()  # 设置模型为评估模式
-    with torch.no_grad():  # 禁用梯度计算
-        # 执行预测
-        out = torch.argmax(torch.softmax(net(input.repeat(1, 3, 1, 1)), dim=1), dim=1).squeeze(0)
-        prediction = out.cpu().detach().numpy()
-        # plot_2d_prediction(prediction, title="Predicted Labels for Case {}".format(case))
-
-    metric_list = []
-    # 计算每个类别的评估指标
-    for i in tqdm(range(1, classes), total=classes - 1):
-        metric_list.append(calculate_metric_percase(prediction == i, label == i))
-    return metric_list,prediction
-
-
 def test_single_volume_Synapse(image, label, net, classes, patch_size=[224, 224], test_save_path=None, case=None, z_spacing=1):
     image, label = image.squeeze(0).cpu().detach().numpy(), label.squeeze(0).cpu().detach().numpy()
 
