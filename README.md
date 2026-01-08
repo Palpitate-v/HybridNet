@@ -67,16 +67,7 @@ Each subdirectory stores the corresponding **optimal model weights** used for th
 
 ## 📊 Results
 
-### 1. Synapse Multi-Organ (Mean ± SD)
-
-Compared against the strongest baseline ParaTransCNN (retrained under optimal settings):
-
-| Methods         | Avg DSC(%) ↑ | Avg HD(mm) ↓ | Aorta   | GB      | Kidney(L) | Kidney(R) | Liver   | Pancreas | Spleen  | Stomach |
-|----------------|--------------|---------------|---------|---------|-----------|-----------|---------|----------|---------|---------|
-| ParaTransCNN   | 82.31        | 16.06         | 83.49   | 72.26   | 87.97     | 82.83     | 94.82   | 68.59    | 90.55   | 82.31   |
-| HybridNet (Ours)| 84.19±0.49   | 12.64±1.86    | 89.37   | 73.15   | 88.40     | 85.26     | 95.29   | 68.99    | 91.16   | 81.86   |
-
-### 2.  Comparison with State-of-the-Art Methods on Synapse
+### 1. Comparison with State-of-the-Art Methods on Synapse
 | Methods                 |          DSC (%) |          HD (mm) |               AO |               GB |               LK |               RK |              Liv |               Pa |               Sp |              Sto |
 | ----------------------- | ---------------: | ---------------: | ---------------: | ---------------: | ---------------: | ---------------: | ---------------: | ---------------: | ---------------: |-----------------:|
 | R50 U-Net  |            74.68 |            36.87 |            87.47 |            66.36 |            80.60 |            78.19 |            93.74 |            56.90 |            85.87 |            74.16 |
@@ -96,7 +87,7 @@ Compared against the strongest baseline ParaTransCNN (retrained under optimal se
 | ParaTransCNN |            83.49 |            16.06 |            88.61 |            72.26 |            87.97 |            82.83 |            94.82 |            68.59 |            90.55 |        **82.31** |
 | **Our Method**          | **84.19 ± 0.49** | **12.64 ± 1.86** | 89.37 ± 0.39 | **73.15 ± 2.76** | **88.40 ± 0.43** | **85.26 ± 0.46** | **95.29 ± 0.11** | **68.99 ± 2.48** | **91.16 ± 1.39** |     81.86 ± 0.82 |
 
-### 3. AVT Performance (Different Seeds)
+### 2. AVT Performance (Different Seeds)
 
 | Seed | Methods    | All DSC(%) | All HD(mm) | K DSC(%) | R DSC(%) | D DSC(%) |
 |------|------------|------------|-------------|----------|----------|----------|
