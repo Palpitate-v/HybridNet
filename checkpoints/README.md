@@ -1,4 +1,4 @@
-## ? Pretrained Checkpoints
+## Pretrained Checkpoints
 
 We provide pretrained model checkpoints for reproducibility and convenient evaluation.  
 All checkpoints are hosted on **Baidu Netdisk**:
@@ -11,4 +11,5 @@ The shared folder contains two subdirectories:
 - swin_tiny_patch4_window7_224.pth (Swin Transformer backbone weights)
 
 Each subdirectory stores the corresponding **optimal model weights** used for the reported results.
+
 
